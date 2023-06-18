@@ -55,6 +55,10 @@ async function onLoadMoreBtnClick() {
     );
     renderAllCards(pictureData.data.hits);
     smoothScroll();
+    if (pictureData.data.hits.length < 40) {
+      Notify.info("We're sorry, but you've reached the end of search results.");
+      refs.loadMoreBtn.classList.add('hidden');
+    }
   } catch (error1) {
     Notify.failure('Sorry, please try again.');
     console.log(error1);
