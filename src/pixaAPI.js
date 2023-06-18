@@ -14,6 +14,5 @@ export async function getPictures(query, pageCount) {
   };
   query = query.replace(/ /g, '+');
   const response = await axios.get(`${BASE_URL}?q=${query}`, options);
-  console.log(response);
   return response;
 }

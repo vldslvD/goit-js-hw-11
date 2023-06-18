@@ -1,1 +1,114 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #3f56b3;
+}
+.search-button {
+  width: 52px;
+  height: 32px;
+  padding: 0 10px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: #e2e2e2;
+  cursor: pointer;
+
+  background-image: url('../images/icons8-search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: #e2e2e2 2px solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.search-input {
+  padding-left: 15px;
+  height: 32px;
+  border: #e2e2e2 2px solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin: -24px -12px;
+}
+
+.photo-card {
+  list-style: none;
+  width: calc((1440px - 8 * 12px) / 4);
+  height: 270px;
+  margin: 24px 12px;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+}
+
+.thumb {
+  height: 200px;
+  width: calc((1440px - 8 * 12px) / 4);
+}
+.photo {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.info {
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+}
+
+.info-item-amount {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.load-more {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 32px;
+  width: 200px;
+  border: #e2e2e2 2px solid;
+  border-radius: 15px;
+}
+.gallery-box {
+  display: flex;
+
+}
